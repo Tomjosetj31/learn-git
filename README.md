@@ -51,3 +51,11 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git branch -d <branch_name>
    ```
+   Change branch name.
+   ```
+   git branch -m <new_branch_name>
+   ```
+   or
+   ```
+   git branch -m <old_branch_name> <new_branch_name>
+   ```
