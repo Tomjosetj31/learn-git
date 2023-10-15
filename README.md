@@ -60,6 +60,10 @@ Git is a popular version control system used by developers to manage and track c
    git branch -m <old_branch_name> <new_branch_name>
    ```
 4. **Commit Changes:**
+   Check the status of the repository.
+   ```
+   git status
+   ```
    Add all files to staging area.
    ```
    git add <file1> <file2>
@@ -75,4 +79,12 @@ Git is a popular version control system used by developers to manage and track c
    Commit changes to the local repository and add all files to staging area.
    ```
    git commit -am "commit message"
+   ```
+   View commit history.
+   ```
+   git log
+   ```
+   View commit history with a graph.
+   ```
+   git log --graph --oneline --decorate --all
    ```
