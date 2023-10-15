@@ -18,180 +18,268 @@ Git is a popular version control system used by developers to manage and track c
 
 ## Development
 
-1. **Initialize a Repository:**
-   Create a new Git repository in the current directory.
+### Initialize a Repository:
 
-   ```
-   git init
-   ```
+Create a new Git repository in the current directory.
 
-2. **Clone a Repository:**
-   Clone a repository from GitHub to your local machine.
-   ```
-   git clone <repository_url>
-   ```
-3. **Create a Branch:**
-   Create a new branch and switch to it.
-   ```
-   git checkout -b <branch_name>
-   ```
-   Create a new branch.
-   ```
-   git branch <branch_name>
-   ```
-   Switch to a branch.
-   ```
-   git checkout <branch_name>
-   ```
-   Get a list of all currently checked-out branches.
-   ```
-   git branch
-   ```
-   Get a list of all branches.
-   ```
-   git branch -a
-   ```
-   Delete a branch.
-   ```
-   git branch -d <branch_name>
-   ```
-   Change branch name.
-   ```
-   git branch -m <new_branch_name>
-   ```
-   or
-   ```
-   git branch -m <old_branch_name> <new_branch_name>
-   ```
-4. **Commit Changes:**
-   Check the status of the repository.
-   ```
-   git status
-   ```
-   Add all files to staging area.
-   ```
-   git add <file1> <file2>
-   ```
-   or
-   ```
-   git add .
-   ```
-   Commit changes to the local repository.
-   ```
-   git commit -m "commit message"
-   ```
-   Commit changes to the local repository and add all files to staging area.
-   ```
-   git commit -am "commit message"
-   ```
-   View commit history.
-   ```
-   git log
-   ```
-   View commit history with a graph.
-   ```
-   git log --graph --oneline --decorate --all
-   ```
-5. **Synchronizing with Remote**
-   Pull changes from remote repository(fetch and integrate changes from remote repo).
-   ```
-   git pull
-   ```
-   Fetch from Remote.
-   ```
-   git fetch
-   ```
-   Push changes to remote repository.
-   ```
-   git push
-   ```
-   Push new branch to remote repository.
-   ```
-    git push --set-upstream origin <branch_name>
-   ```
-   Merge changes from another branch.
-   ```
-   git merge <branch_name>
-   ```
-6. **Miscellaneous**
-   Stash changes(temporarily save your uncommitted changes).
-   ```
-   git stash
-   ```
-   List all stashes.
-   ```
-   git stash list
-   ```
-   Apply a stash.
-   ```
-   git stash apply
-   ```
-   Apply stash by refrence.
-   ```
-   git stash apply stash@{number}
-   ```
-   Delete a stash.
-   ```
-   git stash drop
-   ```
-   Delete a stash by refrence.
-   ```
-    git stash drop stash@{number}
-   ```
-   Delete all stashes.
-   ```
-   git stash clear
-   ```
-   Get the difference between two branches.
-   ```
-    git diff <branch1> <branch2>
-   ```
-   Get the difference between two commits.
-   ```
-   git diff <commit1 id> <commit2 id>
-   ```
-   Remove all untracked files and directories (delete locally).
-   ```
-   git clean -f -d
-   ```
-   Remove an untracked file without deleting it.
-   ```
-   git rm --cached <file_name>
-   ```
-   Remove a file from the staging area.
-   ```
-   git restore --staged <file_name>
-   ```
-   Change the last commit message.
-   ```
-    git commit --amend -m "new commit message"
-   ```
-7. **Remove Changes**
-   Revert changes made to a file (go to a commit and do fresh commit from there).
-   ```
-   git revert <commit_id>
-   ```
-   or
-   ```
-   git revert HEAD
-   ```
-   Reset hard(undo commited changes).
-   ```
-    git reset --hard
-   ```
-   Reset hard to a commit.
-   ```
-   git reset --hard <commit_id>
-   ```
-   Reset mixed(unstage changes keep the changes).
-   ```
-   git reset --mixed
-   ```
-   Reset mixed to a commit.
-   ```
-    git reset --mixed <commit_id>
-   ```
-   Reset soft(keep changes in staging area).
-   ```
-   git reset --soft
-   ```
+```
+git init
+```
+
+### Clone a Repository:
+
+Clone a repository from GitHub to your local machine.
+
+```
+git clone <repository_url>
+```
+
+### Create a Branch:
+
+Create a new branch and switch to it.
+
+```
+git checkout -b <branch_name>
+```
+
+Create a new branch.
+
+```
+git branch <branch_name>
+```
+
+Switch to a branch.
+
+```
+git checkout <branch_name>
+```
+
+Get a list of all currently checked-out branches.
+
+```
+git branch
+```
+
+Get a list of all branches.
+
+```
+git branch -a
+```
+
+Delete a branch.
+
+```
+git branch -d <branch_name>
+```
+
+Change branch name.
+
+```
+git branch -m <new_branch_name>
+```
+
+or
+
+```
+git branch -m <old_branch_name> <new_branch_name>
+```
+
+### Commit Changes:
+
+Check the status of the repository.
+
+```
+git status
+```
+
+Add all files to staging area.
+
+```
+git add <file1> <file2>
+```
+
+or
+
+```
+git add .
+```
+
+Commit changes to the local repository.
+
+```
+git commit -m "commit message"
+```
+
+Commit changes to the local repository and add all files to staging area.
+
+```
+git commit -am "commit message"
+```
+
+View commit history.
+
+```
+git log
+```
+
+View commit history with a graph.
+
+```
+git log --graph --oneline --decorate --all
+```
+
+### Synchronizing with Remote:
+
+Pull changes from remote repository(fetch and integrate changes from remote repo).
+
+```
+git pull
+```
+
+Fetch from Remote.
+
+```
+git fetch
+```
+
+Push changes to remote repository.
+
+```
+git push
+```
+
+Push new branch to remote repository.
+
+```
+ git push --set-upstream origin <branch_name>
+```
+
+Merge changes from another branch.
+
+```
+git merge <branch_name>
+```
+
+### Miscellaneous:
+
+Stash changes(temporarily save your uncommitted changes).
+
+```
+git stash
+```
+
+List all stashes.
+
+```
+git stash list
+```
+
+Apply a stash.
+
+```
+git stash apply
+```
+
+Apply stash by refrence.
+
+```
+git stash apply stash@{number}
+```
+
+Delete a stash.
+
+```
+git stash drop
+```
+
+Delete a stash by refrence.
+
+```
+ git stash drop stash@{number}
+```
+
+Delete all stashes.
+
+```
+git stash clear
+```
+
+Get the difference between two branches.
+
+```
+ git diff <branch1> <branch2>
+```
+
+Get the difference between two commits.
+
+```
+git diff <commit1 id> <commit2 id>
+```
+
+Remove all untracked files and directories (delete locally).
+
+```
+git clean -f -d
+```
+
+Remove an untracked file without deleting it.
+
+```
+git rm --cached <file_name>
+```
+
+Remove a file from the staging area.
+
+```
+git restore --staged <file_name>
+```
+
+Change the last commit message.
+
+```
+ git commit --amend -m "new commit message"
+```
+
+### Remove Changes:
+
+Revert changes made to a file (go to a commit and do fresh commit from there).
+
+```
+git revert <commit_id>
+```
+
+or
+
+```
+git revert HEAD
+```
+
+Reset hard(undo commited changes).
+
+```
+ git reset --hard
+```
+
+Reset hard to a commit.
+
+```
+git reset --hard <commit_id>
+```
+
+Reset mixed(unstage changes keep the changes).
+
+```
+git reset --mixed
+```
+
+Reset mixed to a commit.
+
+```
+ git reset --mixed <commit_id>
+```
+
+Reset soft(keep changes in staging area).
+
+```
+git reset --soft
+```
