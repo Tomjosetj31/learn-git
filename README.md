@@ -171,11 +171,15 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git revert HEAD
    ```
-   Reset hard(undo staged changes and go back to a commit).
+   Reset hard(undo commited changes).
    ```
     git reset --hard
    ```
    Reset hard to a commit.
    ```
    git reset --hard <commit_id>
+   ```
+   Reset mixed(unstage changes keep the changes).
+   ```
+   git reset --mixed
    ```
