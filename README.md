@@ -122,9 +122,17 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git stash apply
    ```
+   Apply stash by refrence.
+   ```
+   git stash apply stash@{number}
+   ```
    Delete a stash.
    ```
    git stash drop
+   ```
+   Delete a stash by refrence.
+   ```
+    git stash drop stash@{number}
    ```
    Delete all stashes.
    ```
