@@ -109,3 +109,24 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git merge <branch_name>
    ```
+6. **Miscellaneous**
+   Stash changes(temporarily save your uncommitted changes).
+   ```
+   git stash
+   ```
+   List all stashes.
+   ```
+   git stash list
+   ```
+   Apply a stash.
+   ```
+   git stash apply
+   ```
+   Delete a stash.
+   ```
+   git stash drop
+   ```
+   Delete all stashes.
+   ```
+   git stash clear
+   ```
