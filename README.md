@@ -175,3 +175,7 @@ Git is a popular version control system used by developers to manage and track c
    ```
     git reset --hard
    ```
+   Reset hard to a commit.
+   ```
+   git reset --hard <commit_id>
+   ```
