@@ -138,3 +138,19 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git stash clear
    ```
+   Get the difference between two branches.
+   ```
+    git diff <branch1> <branch2>
+   ```
+   Get the difference between two commits.
+   ```
+   git diff <commit1 id> <commit2 id>
+   ```
+   Remove all untracked files and directories.
+   ```
+   git clean -f -d
+   ```
+   Remove an untracked file without deleting it.
+   ```
+   git rm --cached <file_name>
+   ```
