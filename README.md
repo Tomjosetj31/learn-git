@@ -88,3 +88,16 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git log --graph --oneline --decorate --all
    ```
+5. **Synchronizing with Remote**
+   Pull changes from remote repository(fetch and integrate changes from remote repo).
+   ```
+   git pull
+   ```
+   Fetch from Remote.
+   ```
+   git fetch
+   ```
+   Push changes to remote repository.
+   ```
+   git push
+   ```
