@@ -30,7 +30,24 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git clone <repository_url>
    ```
-
-```
-
-```
+3. **Create a Branch:**
+   Create a new branch and switch to it.
+   ```
+   git checkout -b <branch_name>
+   ```
+   Create a new branch.
+   ```
+   git branch <branch_name>
+   ```
+   Switch to a branch.
+   ```
+   git checkout <branch_name>
+   ```
+   Get a list of all branches.
+   ```
+   git branch
+   ```
+   Delete a branch.
+   ```
+   git branch -d <branch_name>
+   ```
