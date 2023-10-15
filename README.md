@@ -101,6 +101,10 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git push
    ```
+   Push new branch to remote repository.
+   ```
+    git push --set-upstream origin <branch_name>
+   ```
    Merge changes from another branch.
    ```
    git merge <branch_name>
