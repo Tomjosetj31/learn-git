@@ -146,11 +146,15 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git diff <commit1 id> <commit2 id>
    ```
-   Remove all untracked files and directories.
+   Remove all untracked files and directories (delete locally).
    ```
    git clean -f -d
    ```
    Remove an untracked file without deleting it.
    ```
    git rm --cached <file_name>
+   ```
+   Remove a file from the staging area.
+   ```
+   git restore --staged <file_name>
    ```
