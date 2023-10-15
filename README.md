@@ -43,9 +43,13 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git checkout <branch_name>
    ```
-   Get a list of all branches.
+   Get a list of all currently checked-out branches.
    ```
    git branch
+   ```
+   Get a list of all branches.
+   ```
+   git branch -a
    ```
    Delete a branch.
    ```
