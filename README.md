@@ -162,3 +162,36 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git restore --staged <file_name>
    ```
+   Change the last commit message.
+   ```
+    git commit --amend -m "new commit message"
+   ```
+7. **Remove Changes**
+   Revert changes made to a file (go to a commit and do fresh commit from there).
+   ```
+   git revert <commit_id>
+   ```
+   or
+   ```
+   git revert HEAD
+   ```
+   Reset hard(undo commited changes).
+   ```
+    git reset --hard
+   ```
+   Reset hard to a commit.
+   ```
+   git reset --hard <commit_id>
+   ```
+   Reset mixed(unstage changes keep the changes).
+   ```
+   git reset --mixed
+   ```
+   Reset mixed to a commit.
+   ```
+    git reset --mixed <commit_id>
+   ```
+   Reset soft(keep changes in staging area).
+   ```
+   git reset --soft
+   ```
