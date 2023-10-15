@@ -183,3 +183,11 @@ Git is a popular version control system used by developers to manage and track c
    ```
    git reset --mixed
    ```
+   Reset mixed to a commit.
+   ```
+    git reset --mixed <commit_id>
+   ```
+   Reset soft(keep changes in staging area).
+   ```
+   git reset --soft
+   ```
